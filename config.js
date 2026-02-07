@@ -46,12 +46,11 @@ export const config = {
     ]
   },
 
-  // Celebration screen
+  // Celebration screen (CHAOTIC CUTE VERSION 😈)
   celebration: {
-    title: "Will you be my Valentine, Rithika? 💌",
-    message:
-      "This officially comes with a warm hug 🤗 and a soft kiss 😙\n\nNo pressure… but also yes pressure 😌",
-    emojis: ["💖", "🤗", "😙", "✨", "🧸"]
+    title: "WAIT—THIS ACTUALLY WORKED 😭💖",
+    message: "Okay now come get your gift… no backing out 🤗😙",
+    emojis: ["🎁", "🤍", "🤗", "💋", "✨"]
   },
 
   // Background vibes
