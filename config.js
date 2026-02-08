@@ -1,60 +1,50 @@
-export const config = {
+// ============================================
+// 💝 CUSTOMIZE YOUR VALENTINE'S WEBSITE HERE 💝
+// ============================================
+
+const CONFIG = {
+  valentineName: "Rithika",
   pageTitle: "Hey Rithika 💌",
 
-  valentineName: "Rithika",
-
-  // Landing page
-  heroTitle: "Important Question Incoming 🚨",
-  heroSubtitle: "Please proceed with caution (and a smile)",
-  startButtonText: "Okay I’m ready 😌",
-
-  // Questions flow
-  questions: [
-    {
-      question: "First things first… do you like warm hugs? 🤗",
-      options: ["YES obviously", "I love them", "Why is this even a question"],
-      correctAnswer: "YES obviously",
-      successMessage: "As expected 😌"
-    },
-    {
-      question: "And what about soft forehead kisses? 😙",
-      options: ["Maybe 👀", "Yes pls", "Depends who it’s from"],
-      correctAnswer: "Depends who it’s from",
-      successMessage: "Interesting… very interesting 🤭"
-    },
-    {
-      question: "Final and most important question 💖",
-      options: [
-        "Yes, absolutely 💕",
-        "Yes but make it cute",
-        "Only if it’s you 😌"
-      ],
-      correctAnswer: "Only if it’s you 😌",
-      successMessage: "Okay wow you just passed with flying colors 🥹"
-    }
-  ],
-
-  // Love meter
-  loveMeter: {
-    title: "Love Meter 💘",
-    messages: [
-      "Hmm… potential detected 👀",
-      "Okay this is getting kinda cute",
-      "Dangerously adorable levels reached",
-      "Yeah there’s no denying this now 😌",
-      "Confirmed: Valentine material 💖"
-    ]
+  // Floating emojis that appear in the background
+  floatingEmojis: {
+    hearts: ["💖", "🤍", "💕", "💘", "💝"],
+    bears: ["🧸", "🐻"]
   },
 
-  // Celebration screen 😈
+  // Questions and answers (MUST match this structure)
+  questions: {
+    first: {
+      text: "First things first… do you like warm hugs? 🤗",
+      yesBtn: "YES obviously",
+      noBtn: "Why is this even a question",
+      secretAnswer: "As expected 😌"
+    },
+    second: {
+      text: "Okay… how much do you love warm hugs? 😌",
+      startText: "This much!",
+      nextBtn: "Next 💖"
+    },
+    third: {
+      text: "Will you be my Valentine? 💌",
+      yesBtn: "Only if it’s you 😌",
+      noBtn: "Yes but make it cute"
+    }
+  },
+
+  // Love meter messages (repo expects these 3 keys)
+  loveMessages: {
+    extreme: "WAIT—THIS ACTUALLY WORKED 😭💖",
+    high: "Okay now come get your gift… no backing out 🤗😙",
+    normal: "Confirmed: Valentine material 💖"
+  },
+
+  // Celebration screen
   celebration: {
     title: "WAIT—THIS ACTUALLY WORKED 😭💖",
     message: "Okay now come get your gift… no backing out 🤗😙",
-    emojis: ["🎁", "🤍", "🤗", "💋", "✨"]
+    emojis: "🎁🤍🤗💋✨"
   },
-
-  // Floating background emojis
-  floatingEmojis: ["💖", "🧸", "✨", "😌", "🤍"],
 
   // 🎨 Color scheme
   colors: {
@@ -73,7 +63,7 @@ export const config = {
     heartExplosionSize: 1.5
   },
 
-  // 🎵 Background Music
+  // 🎵 Background Music (NOTE: copyrighted songs can get your host flagged)
   music: {
     enabled: true,
     autoplay: true,
@@ -81,6 +71,9 @@ export const config = {
       "https://res.cloudinary.com/dffotfj0w/video/upload/v1770529716/The_Weeknd_-_Earned_It_Fifty_Shades_Of_Grey_r8iuyh.mp3",
     startText: "🎵 Play Music",
     stopText: "🔇 Stop Music",
-    volume: 0.5
+    volume: 0.35
   }
 };
+
+// Don't modify anything below this line unless you know what you're doing
+window.VALENTINE_CONFIG = CONFIG;
