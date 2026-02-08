@@ -13,7 +13,7 @@ const CONFIG = {
     first: {
       text: "First things first… do you like hugs and forehead kisses? 🤗",
       yesBtn: "YES obviously",
-      noBtn: "Why is this even a question",
+      noBtn: "Why is this even a question?",
       secretAnswer: "Give me some right now!"
     },
     second: {
