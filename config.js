@@ -46,21 +46,41 @@ export const config = {
     ]
   },
 
-  // Celebration screen (CHAOTIC CUTE VERSION 😈)
+  // Celebration screen 😈
   celebration: {
     title: "WAIT—THIS ACTUALLY WORKED 😭💖",
     message: "Okay now come get your gift… no backing out 🤗😙",
     emojis: ["🎁", "🤍", "🤗", "💋", "✨"]
   },
 
-  // Background vibes
+  // Floating background emojis
   floatingEmojis: ["💖", "🧸", "✨", "😌", "🤍"],
 
-  // Colors (soft + cozy)
-  theme: {
-    gradientStart: "#ffdde1",
-    gradientEnd: "#ee9ca7",
-    buttonColor: "#ff6f91",
-    buttonTextColor: "#ffffff"
+  // 🎨 Color scheme
+  colors: {
+    backgroundStart: "#ffafbd",
+    backgroundEnd: "#ffc3a0",
+    buttonBackground: "#ff6b6b",
+    buttonHover: "#ff8787",
+    textColor: "#ff4757"
+  },
+
+  // ✨ Animations
+  animations: {
+    floatDuration: "15s",
+    floatDistance: "50px",
+    bounceSpeed: "0.5s",
+    heartExplosionSize: 1.5
+  },
+
+  // 🎵 Background Music
+  music: {
+    enabled: true,
+    autoplay: true,
+    musicUrl:
+      "https://res.cloudinary.com/dffotfj0w/video/upload/v1770529716/The_Weeknd_-_Earned_It_Fifty_Shades_Of_Grey_r8iuyh.mp3",
+    startText: "🎵 Play Music",
+    stopText: "🔇 Stop Music",
+    volume: 0.5
   }
 };
