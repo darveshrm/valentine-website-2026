@@ -31,8 +31,8 @@ const CONFIG = {
   // Love meter messages (repo expects these 3 keys)
   loveMessages: {
     extreme: "Yay! I'm the luckiest person in the world! 🎉💝💖💝💓",
-    high: "Okay, no backing out now 🤗😙",
-    normal: "Wow, this much 💖"
+    high: "WOWWW, that much??💖",
+    normal: "Okay, no backing out now 🤗😙"
   },
 
   // Celebration screen
